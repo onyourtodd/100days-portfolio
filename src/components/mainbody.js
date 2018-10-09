@@ -1,7 +1,7 @@
 import React from 'react'
 
 const MainBody = ({ children }) => (
-  <section class="main-wrapper">
+  <section className="main-wrapper">
     <h1>Hola</h1>
     <h2>I am Todd, a <span>front-end</span> <span id="js-rotating">developer, designer, consultant</span> from London, living in 🌞 Barcelona.</h2>
     <p>  I have over 10 years experience in the digital space, across a variety of different departments, projects and disciplines. Right now, I am currently focused on creating web apps using the latest front end technologies.</p>

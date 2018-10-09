@@ -20,6 +20,7 @@ html {
 
 body {
   overflow-x:hidden;
+  margin: 0;
 }
 
 /*
@@ -102,6 +103,15 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
 
 h1 {
     font-size:12vw;

@@ -1,12 +1,12 @@
 import React from 'react'
 
 const Sun = ({ children }) => (
-  <div class="sun-container">
-    <div class="sun"></div>
-    <div class="sun1"></div>
-    <div class="sun2"></div>
-    <div class="sun3"></div>
-    <div class="sun4"></div>
+  <div className="sun-container">
+    <div className="sun"></div>
+    <div className="sun1"></div>
+    <div className="sun2"></div>
+    <div className="sun3"></div>
+    <div className="sun4"></div>
   </div>
 )
 

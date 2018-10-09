@@ -1,9 +1,8 @@
 import React from 'react'
 
 const Island = ({ children }) => (
-  <div class="island-wrapper">
-    <svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360"
-className="island" width="400">
+  <div className="island-wrapper">
+    <svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" className="island" width="400">
         <path id="XMLID_2090_" d="M180,240.081c-6.806,0-13.465,0.396-19.929,1.149l-5.771,28.85h-20.832 l-4.41-22.051C93.957,259.722,70,283.119,70,310.08h110C180,271.421,180,278.969,180,240.081z"
         fill="#ffd6a0" />
         <path id="XMLID_2091_" d="M290,310.08c0-27.399-24.742-51.117-60.778-62.611 c1.121,3.662,1.064,7.713-0.456,11.551c-3.559,8.986-13.729,13.385-22.715,9.827c-8.985-3.559-13.385-13.727-9.826-22.714 c0.742-1.875,1.785-3.536,3.032-4.981c-6.253-0.702-12.687-1.07-19.257-1.07c0,38.889,0,31.34,0,69.999H290z"

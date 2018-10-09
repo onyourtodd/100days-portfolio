@@ -5,7 +5,6 @@ import Logo from '../components/logo'
 import MainBody from '../components/mainbody'
 import Waves from '../components/waves'
 import Layout from '../components/layout'
-import Fishes from '../components/fishes'
 import Island from '../components/island'
 
 const IndexPage = () => (
@@ -15,10 +14,9 @@ const IndexPage = () => (
     <Logo />
     <MainBody />
     <Island />
-    <Waves>
-      <Fishes />
-    </Waves>
+    <Waves />
   </Layout>
+  
 )
 
 
