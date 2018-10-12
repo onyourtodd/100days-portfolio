@@ -1,11 +1,10 @@
-@import (css) url(https://fonts.googleapis.com/css?family=Open+Sans);
-
 @import "./logo.less";
 @import "./island.less";
 @import "./sun.less";
 @import "./waves.less";
 @import "./mainBody.less";
 @import "./typography.less";
+@import "./colours.less";
 
 html {
     color: #222;
@@ -139,7 +138,7 @@ html {
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; 
+        color: @black !important; 
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
         text-shadow: none !important;
