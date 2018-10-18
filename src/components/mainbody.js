@@ -1,4 +1,5 @@
 import React from 'react'
+import About from '../components/about'
 
 const MainLinks = [
   {
@@ -22,6 +23,7 @@ const MainBody = ({ children }) => (
           <a href={link.link} target="_blank" rel="noopener noreferrer nofollow">{link.name} <span>&rarr;</span></a>
         </li>
       ))}
+      <About />
     </ul>
   </section>
 )
