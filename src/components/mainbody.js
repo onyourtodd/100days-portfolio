@@ -1,4 +1,5 @@
 import React from 'react'
+import Contact from '../components/contact'
 import About from '../components/about'
 
 const MainLinks = [
@@ -6,8 +7,8 @@ const MainLinks = [
     name: 'Latest Work',
     link: 'http://www.email-mentor.com/'
   }, {
-    name: 'Contact',
-    link: 'mailto:kron_todd@hotmail.com'
+    name: 'Quote generator',
+    link: '/quotes'
   }
 ]
 
@@ -23,6 +24,7 @@ const MainBody = ({ children }) => (
           <a href={link.link} target="_blank" rel="noopener noreferrer nofollow">{link.name} <span>&rarr;</span></a>
         </li>
       ))}
+      <Contact />
       <About />
     </ul>
   </section>
