@@ -1,12 +1,14 @@
 import React from 'react'
 
+import styles from "./sun.module.less"
+
 const Sun = ({ children }) => (
-  <div className="sun-container">
-    <div className="sun"></div>
-    <div className="sun1"></div>
-    <div className="sun2"></div>
-    <div className="sun3"></div>
-    <div className="sun4"></div>
+  <div className={styles.sunContainer}>
+    <div className={styles.sun}></div>
+    <div className={styles.sun1}></div>
+    <div className={styles.sun2}></div>
+    <div className={styles.sun3}></div>
+    <div className={styles.sun4}></div>
   </div>
 )
 

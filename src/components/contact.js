@@ -1,7 +1,7 @@
 //import stuff
 import React, { Component } from 'react';
 
-import './contact.less'
+import styles from "./contact.module.less"
 
 class Contact extends Component {
   constructor(props) {
@@ -18,8 +18,8 @@ class Contact extends Component {
   
   render() {
     const modal = (
-      <div className="modal">
-        <h2 className="text-pop-up-top">Contact me</h2>
+      <div className={styles.modal}>
+        <h2 className={styles.textPopUp}>Contact me</h2>
         <p>
           Let's connect!<br />
           If you would like to get in contact regarding web dev then please use the form below.<br />
@@ -35,11 +35,11 @@ class Contact extends Component {
           </p>
           <div data-netlify-recaptcha></div>
           <p>
-            <button type="submit">Send</button>
+            <button type="submit" className={styles.bubblyButton}>Send</button>
           </p>
         </form>
         
-        <div className="exit" onClick={this.handleClick}>
+        <div className={styles.exit} onClick={this.handleClick}>
           &#x02297;
         </div>
         
@@ -47,8 +47,8 @@ class Contact extends Component {
     );
     
     return (
-        <div className="about">
-          <div className='button' onClick={this.handleClick}>
+        <div className={styles.about}>
+          <div className={styles.button} onClick={this.handleClick}>
             <ul>
                 <li>
                   Contact<span>&rarr;</span>

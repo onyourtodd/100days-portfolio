@@ -1,3 +1,5 @@
+@import "./colours.less";
+
 .logo {
   width:80px;
   height:80px;
@@ -11,19 +13,19 @@
   transform: rotate(1080deg);
 }
 
-.cls-1 {
+.cls1 {
   fill: @brand-pink;
 }
 
-.cls-2 {
+.cls2 {
   font-size: 150px;
   fill: #fff;
   font-family: "Arial Rounded MT Bold";
 }
 
-.bounce-in-top {
-  -webkit-animation: bounce-in-top 1.1s both;
-          animation: bounce-in-top 1.1s both;
+.bounce {
+  -webkit-animation: bounce 1.1s both;
+          animation: bounce 1.1s both;
 }
 
 /**
@@ -31,7 +33,7 @@
  * animation bounce-in-top
  * ----------------------------------------
  */
- @-webkit-keyframes bounce-in-top {
+ @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translateY(-500px);
             transform: translateY(-500px);
@@ -82,7 +84,7 @@
             animation-timing-function: ease-out;
   }
 }
-@keyframes bounce-in-top {
+@keyframes bounce {
   0% {
     -webkit-transform: translateY(-500px);
             transform: translateY(-500px);
