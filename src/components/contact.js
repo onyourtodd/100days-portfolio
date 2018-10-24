@@ -26,9 +26,17 @@ class Contact extends Component {
           Looking forward to hearing from you.
         </p>
 
-        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-          <input name="name" placeholder="Your Name" type="text" />
-          <button>Send</button>
+        <form name="contact" method="POST" netlify>
+          <p>
+            <label>Email: <input type="text" name="name" /></label>
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <div data-netlify-recaptcha></div>
+          <p>
+            <button type="submit">Send</button>
+          </p>
         </form>
         
         <div className="exit" onClick={this.handleClick}>
