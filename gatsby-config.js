@@ -19,6 +19,18 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-less',
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-transition-link',
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "SWAPI",
+        // This is the field under which it's accessible
+        fieldName: "swapi",
+        // URL to query from
+        url: "https://api.graphcms.com/simple/v1/swapi",
+      },
+    },
+    'gatsby-plugin-page-transitions',
   ],
   
 }
