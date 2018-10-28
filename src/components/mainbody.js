@@ -27,7 +27,7 @@ const MainBody = ({ children }) => (
       <ul>
         <Contact />
         <About />
-        {MainLinks.map( link => (
+        {MainLinks.map(link => (
           <li>
             <Link to={link.link}>{link.name}</Link>
           </li>
