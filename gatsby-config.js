@@ -4,6 +4,16 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-less',
+    'gatsby-plugin-offline',
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-transition-link',
+    'gatsby-plugin-brotli',
+    'gatsby-plugin-fastclick',
+    'gatsby-plugin-polyfill-io',
+    'gatsby-plugin-webpack-size',
+    'gatsby-plugin-webpack-bundle-analyzer',
+    'gatsby-plugin-page-transitions',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -16,10 +26,42 @@ module.exports = {
         icon: 'src/images/logo.png',
       },
     },
-    'gatsby-plugin-offline',
-    'gatsby-plugin-less',
-    'gatsby-plugin-styled-components',
-    'gatsby-plugin-transition-link',
+    {
+      resolve: `gatsby-plugin-accessibilityjs`,
+      options: {
+        injectStyles: `
+        .accessibility-error {
+          box-shadow: 0 0 3px 1px #f00;
+          background-color: rgba(255, 0, 0, 0.25);
+          position: relative;
+        }
+        .accessibility-error:before {
+          content: "A11Y";
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: #fff;
+          font-size: 10px;
+          background-color: rgba(255, 0, 0, 0.5);
+          transform: translateY(-100%);
+        }
+      `,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `tomato`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Open Sans']
+        }
+      }
+    },
     {
       resolve: "gatsby-source-graphql",
       options: {
@@ -30,7 +72,6 @@ module.exports = {
         url: "https://api.graphcms.com/simple/v1/swapi",
       },
     },
-    'gatsby-plugin-page-transitions',
   ],
 
 }
