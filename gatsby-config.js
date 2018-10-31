@@ -13,7 +13,7 @@ module.exports = {
     'gatsby-plugin-polyfill-io',
     'gatsby-plugin-webpack-size',
     'gatsby-plugin-webpack-bundle-analyzer',
-    'gatsby-plugin-page-transitions',
+    //'gatsby-plugin-page-transitions',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -58,20 +58,19 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Open Sans']
-        }
-      }
+          families: ['Open Sans'],
+        },
+      },
     },
     {
-      resolve: "gatsby-source-graphql",
+      resolve: 'gatsby-source-graphql',
       options: {
-        typeName: "SWAPI",
+        typeName: 'SWAPI',
         // This is the field under which it's accessible
-        fieldName: "swapi",
+        fieldName: 'swapi',
         // URL to query from
-        url: "https://api.graphcms.com/simple/v1/swapi",
+        url: 'https://api.graphcms.com/simple/v1/swapi',
       },
     },
   ],
-
 }
