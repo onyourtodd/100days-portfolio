@@ -7,7 +7,7 @@
     "accessibilityjs": "^1.1.2",
     "axios": "^0.18.0",
     "babel-plugin-styled-components": "^1.8.0",
-    "gatsby": "^2.0.0",
+    "gatsby": "^2.0.35",
     "gatsby-cli": "^2.4.4",
     "gatsby-plugin-accessibilityjs": "^1.0.3",
     "gatsby-plugin-brotli": "^1.0.0",
