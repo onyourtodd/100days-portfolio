@@ -5,17 +5,17 @@ import styles from "./contact.module.less"
 
 class Contact extends Component {
   constructor(props) {
-      super(props);
-      this.state = {showModal: false};
-      this.handleClick = this.handleClick.bind(this);
-    }
+    super(props);
+    this.state = { showModal: false };
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-   handleClick() {
+  handleClick() {
     this.setState(prevState => ({
       showModal: !prevState.showModal
     }));
   }
-  
+
   render() {
     const modal = (
       <div className={styles.modal}>
@@ -38,25 +38,25 @@ class Contact extends Component {
             <button type="submit" className={styles.bubblyButton}>Send</button>
           </p>
         </form>
-        
+
         <div className={styles.exit} onClick={this.handleClick}>
           &#x02297;
         </div>
-        
+
       </div>
     );
-    
+
     return (
-        <div className={styles.about}>
-          <div className={styles.button} onClick={this.handleClick}>
-            <ul>
-                <li>
-                  Contact<span>&rarr;</span>
-                </li>
-            </ul>
-          </div>
-          {this.state.showModal ? modal : ''} 
+      <div className={styles.about}>
+        <div className={styles.button} onClick={this.handleClick}>
+          <ul>
+            <li>
+              Contact<span>&nbsp;&rarr;</span>
+            </li>
+          </ul>
         </div>
+        {this.state.showModal ? modal : ''}
+      </div>
     );
   }
 }

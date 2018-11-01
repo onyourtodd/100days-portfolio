@@ -35,7 +35,7 @@ class AboutModal extends Component {
         <div className={styles.button} onClick={this.handleClick}>
           <ul>
             <li>
-              More info<span>&rarr;</span>
+              More info<span>&nbsp;&rarr;</span>
             </li>
           </ul>
         </div>

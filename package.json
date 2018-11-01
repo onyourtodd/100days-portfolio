@@ -29,8 +29,12 @@
     "gatsby-source-graphql": "^2.0.5",
     "less": "^3.8.1",
     "react": "^16.5.1",
+    "react-data-fetching": "^0.2.4",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
+    "react-pose": "^3.3.7",
+    "react-pose-text": "^3.1.0",
+    "react-router": "^4.3.1",
     "react-typography": "^0.16.13",
     "styled-components": "^4.0.2",
     "typography": "^0.16.17"
