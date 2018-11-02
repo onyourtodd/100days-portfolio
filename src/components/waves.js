@@ -5,8 +5,10 @@ import styles from "./waves.module.less"
 import Fishes from '../components/fishes'
 
 const Waves = ({ children }) => (
-    <div id={styles.wave}>
-        <Fishes />
+    <div class="wavesGrid">
+        <div id={styles.wave}>
+            <Fishes />
+        </div>
     </div>
 )
 

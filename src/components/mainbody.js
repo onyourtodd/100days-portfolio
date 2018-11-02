@@ -28,35 +28,37 @@ const charPoses = {
 }
 
 const MainBody = ({ children }) => (
-  <section className={styles.mainWrapper}>
-    <h1>Hola</h1>
-    <h2>
-      I am Todd, a{' '}
-      <SplitText initialPose="exit" pose="enter" charPoses={charPoses} className={styles.splittext}>
-        front-end developer
-      </SplitText>{' '}
-      from London, living in 🌞 Barcelona.
-    </h2>
-    <p>
-      {' '}
-      I have over 10 years experience in the digital space, across a variety of
-      different departments, projects and disciplines. Right now, I am currently
-      focused on creating web apps using the latest front end technologies.
-    </p>
-    <p>
-      Including but not limited to; <i>HTML5</i>, <i>CSS3</i>, <i>Javascript</i>
-      , <i>React</i>, <i>Redux</i>.
-    </p>
-    <ul>
-      <Contact />
-      <About />
-      {MainLinks.map((link, index) => (
-        <li key={'main-body-link' + index}>
-          <Link to={link.link}>{link.name}<span className={styles.linkarrow}>&nbsp;→</span></Link>
-        </li>
-      ))}
-    </ul>
-  </section>
+  <div class="mainGrid">
+    <section className={styles.mainWrapper}>
+      <h1>Hola</h1>
+      <h2>
+        I am Todd, a{' '}
+        <SplitText initialPose="exit" pose="enter" charPoses={charPoses} className={styles.splittext}>
+          front-end developer
+        </SplitText>{' '}
+        from London, living in 🌞 Barcelona.
+      </h2>
+      <p>
+        {' '}
+        I have over 10 years experience in the digital space, across a variety of
+        different departments, projects and disciplines. Right now, I am currently
+        focused on creating web apps using the latest front end technologies.
+      </p>
+      <p>
+        Including but not limited to; <i>HTML5</i>, <i>CSS3</i>, <i>Javascript</i>
+        , <i>React</i>, <i>Redux</i>.
+      </p>
+      <ul>
+        <Contact />
+        <About />
+        {MainLinks.map((link, index) => (
+          <li key={'main-body-link' + index}>
+            <Link to={link.link}>{link.name}<span className={styles.linkarrow}>&nbsp;→</span></Link>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
 )
 
 export default MainBody
