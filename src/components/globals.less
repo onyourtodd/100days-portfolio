@@ -23,56 +23,11 @@ body {
   grid-template-areas: "logoGrid . . sunGrid" "mainGrid mainGrid mainGrid mainGrid" "islandGrid islandGrid islandGrid islandGrid" "wavesGrid wavesGrid wavesGrid wavesGrid";
 }
 
-.logoGrid { grid-area: logoGrid; }
-
-.sunGrid { grid-area: sunGrid; }
-
-.mainGrid { grid-area: mainGrid; }
-
-.islandGrid { grid-area: islandGrid; }
-
-.wavesGrid { grid-area: wavesGrid; }
-
-@media all and (-ms-high-contrast:none) {
+@media all and (high-contrast:none) {
  .containerGrid {
     display: -ms-grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr;
-  }
-
- .logoGrid {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-  }
-
- .sunGrid {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 1;
-  }
-
- .mainGrid {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 3;
-  }
-
- .islandGrid {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 1;
-  }
-
- .wavesGrid {
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
+    grid-columns: 1fr 1fr 1fr 1fr;
+    grid-rows: 1fr 1fr 1fr 1fr;
   }
 }
 

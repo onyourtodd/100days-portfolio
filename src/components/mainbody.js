@@ -28,7 +28,7 @@ const charPoses = {
 }
 
 const MainBody = ({ children }) => (
-  <div class="mainGrid">
+  <div className={styles.mainGrid}>
     <section className={styles.mainWrapper}>
       <h1>Hola</h1>
       <h2>

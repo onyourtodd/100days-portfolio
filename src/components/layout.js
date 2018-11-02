@@ -28,25 +28,9 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <div class="containerGrid">
+        <div className="containerGrid">
           {children}
         </div>
-        <Helmet>
-          <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-          <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                  document.getElementById('js-rotating').Morphext({
-                      animation: "rotateIn",
-                      complete: function () {
-                          console.log("This is called after a phrase is animated in! Current phrase index: " + this.index);
-                      }
-                  });
-                  `,
-            }}
-          />
-        </Helmet>
       </>
     )}
   />

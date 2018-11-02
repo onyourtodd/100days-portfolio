@@ -4,7 +4,7 @@ import styles from "./sun.module.less"
 
 const Sun = ({ children }) => (
 
-  <div class="sunGrid">
+  <div className={styles.sunGrid}>
     <div className={styles.sunContainer}>
       <div className={styles.sun}></div>
       <div className={styles.sun1}></div>

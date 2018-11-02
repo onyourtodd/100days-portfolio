@@ -1,4 +1,3 @@
-//import stuff
 import React, { Component } from 'react';
 
 import styles from "./contact.module.less"

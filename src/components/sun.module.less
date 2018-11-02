@@ -2,6 +2,19 @@
   overflow: hidden;
 }
 
+.sunGrid { 
+  grid-area: sunGrid; 
+  justify-self: end;
+}
+
+@media all and (high-contrast:none) {
+  .sunGrid {
+     grid-row: 1;
+     grid-row-span: 1;
+     grid-column: 4;
+   }
+ }
+
 .sun {
   width: 200px;
   height: 200px;
@@ -9,9 +22,10 @@
   border-radius: 50%;
   display: inline-block;
   margin-right: 20px;
-  position: absolute;
+  position: relative;
   top: -70px;
-  right: -60px;
+  margin-right: 0;
+  right:-43px;
   overflow: hidden;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);

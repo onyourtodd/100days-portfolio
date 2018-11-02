@@ -8,6 +8,19 @@
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
+
+.logoGrid { 
+  grid-area: logoGrid; 
+}
+
+@media all and (high-contrast:none) {
+  .logoGrid {
+    grid-row: 1;
+    grid-row-span: 1;
+    grid-column: 1;
+    grid-column-span: 1;
+  }
+}
   
 .logo:hover {
   transform: rotate(1080deg);

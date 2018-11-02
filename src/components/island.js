@@ -3,7 +3,7 @@ import React from 'react'
 import styles from "./island.module.less"
 
 const Island = ({ children }) => (
-  <div class="islandGrid">
+  <div className={styles.islandGrid}>
     <div className={styles.islandsWrapper}>
       <svg id={styles.Capa1} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" width="400">
         <path d="M180,240.081c-6.806,0-13.465,0.396-19.929,1.149l-5.771,28.85h-20.832 l-4.41-22.051C93.957,259.722,70,283.119,70,310.08h110C180,271.421,180,278.969,180,240.081z"

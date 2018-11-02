@@ -1,3 +1,17 @@
+.islandGrid { 
+  grid-area: islandGrid; 
+  justify-self: end;
+}
+
+@media all and (high-contrast:none) {
+  .islandGrid {
+     grid-row: 3;
+     grid-row-span: 1;
+     grid-column: 4;
+     grid-column-span: 1;
+   }
+ }
+
 .islandsWrapper {
   height:0;
 }
@@ -6,11 +20,10 @@ svg#Capa1 {
   position: relative;
   top: -191px;
   z-index: 1;
-  left: 64%;
 }
 
 /* refactor */
-@media only screen and (max-width: 1130px) {
+@media only screen and (max-width: 650px) {
     .islandsWrapper {
         display:none;
   }
