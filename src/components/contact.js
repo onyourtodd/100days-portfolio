@@ -25,7 +25,7 @@ class Contact extends Component {
           Looking forward to hearing from you.
         </p>
 
-        <form name="contact" method="POST" netlify>
+        <form name="contact" method="POST" data-netlify="true">
           <p>
             <label>Email: <input type="text" name="name" /></label>
           </p>
@@ -36,12 +36,12 @@ class Contact extends Component {
           <p>
             <button type="submit" className={styles.bubblyButton}>Send</button>
           </p>
+          <input type="hidden" name="form-name" value="contact" /> 
         </form>
 
         <div className={styles.exit} onClick={this.handleClick}>
           &#x02297;
         </div>
-
       </div>
     );
 
