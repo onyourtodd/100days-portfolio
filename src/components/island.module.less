@@ -1,6 +1,6 @@
 .islandGrid { 
   grid-area: islandGrid; 
-  justify-self: end;
+  justify-self: center;
 }
 
 @media all and (high-contrast:none) {
@@ -18,13 +18,14 @@
 
 svg#Capa1 {
   position: relative;
-  top: -191px;
+  top: -208px;
   z-index: 1;
 }
 
 /* refactor */
-@media only screen and (max-width: 650px) {
-    .islandsWrapper {
-        display:none;
+@media only screen and (max-width: 920px) {
+  svg#Capa1 {
+    width: 260px;
+    top: -87px;
   }
 }

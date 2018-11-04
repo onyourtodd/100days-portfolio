@@ -36,11 +36,11 @@ const MainBody = ({ children }) => (
     <section className={styles.mainWrapper}>
       <h1>Hola</h1>
       <h2>
-        I am Todd, a{' '}
+        I'm Todd, a{' '}
         <SplitText initialPose="exit" pose="enter" charPoses={textEffect} className={styles.splittext}>
           front-end developer
         </SplitText>{' '}
-        from London, living in 🌞 Barcelona. It's <Clock format={'HH:mm a'} ticking={true} timezone={'Europe/Madrid'} /> here.
+        from London, living in 🌞 Barcelona. It's <Clock format={'HH:mm a'} ticking={true} timezone={'Europe/Madrid'} /> here!
       </h2>
       <p>
           I have over 10 years of industry experience in the digital space, across a variety of
