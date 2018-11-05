@@ -5,7 +5,7 @@
 .sunGrid { 
   grid-area: sunGrid; 
   justify-self: end;
-  height:190px;
+  height:140px;
 }
 
 @media all and (high-contrast:none) {
@@ -15,6 +15,12 @@
      grid-column: 4;
    }
  }
+
+@media (max-width: 1400px) {
+  .sunGrid {
+    height:220px;
+  }
+}
 
 .sun {
   width: 200px;

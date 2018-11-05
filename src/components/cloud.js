@@ -3,7 +3,7 @@ import React from 'react'
 import styles from "./cloud.module.less"
 
 const Cloud = ({ children }) => (
-  <div class="clouds">
+  <div className={styles.clouds}>
     <svg version="1.1" x="0px" y="0px" width="762px"
     height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" className={`${styles.cloud} ${styles.slowest}`}>
       <path fill="pink" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
