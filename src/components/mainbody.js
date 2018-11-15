@@ -7,6 +7,7 @@ import Cloud from '../components/cloud'
 import SplitText from 'react-pose-text'
 import Link from 'gatsby-link'
 import Clock from 'react-live-clock';
+import Switcher from '../components/switcher'
 
 import styles from './mainBody.module.less'
 
@@ -30,8 +31,8 @@ const textEffect = {
   },
 }
 
-const MainBody = ({ children }) => (
-  <div className={styles.mainGrid}>
+const MainBody = ({ children }) => {
+  return (<div className={styles.mainGrid}>
     <Cloud />
     <section className={styles.mainWrapper}>
       <h1>Hola</h1>
@@ -43,9 +44,7 @@ const MainBody = ({ children }) => (
         from London, living in 🌞 Barcelona. It's <Clock format={'HH:mm a'} ticking={true} timezone={'Europe/Madrid'} /> here!
       </h2>
       <p>
-          I have over 10 years of industry experience in the digital space, across a variety of
-          different departments, projects and disciplines. Right now, I am currently
-          focused on creating web apps using the latest front end technologies.
+        I have over 10 years of industry experience in the digital space, across a variety of different departments, projects and disciplines. Right now, I am currently focused on creating web apps using the latest front end technologies.
       </p>
       <p>
           Including but not limited to; <i>HTML5</i>, <i>CSS3</i>, <i>Javascript</i>
@@ -62,7 +61,7 @@ const MainBody = ({ children }) => (
       </ul>
     </section>
     
-  </div>
-)
+  </div>);
+}
 
 export default MainBody
