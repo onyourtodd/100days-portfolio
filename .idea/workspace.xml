@@ -147,10 +147,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1920" />
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1177" />
+    <option name="width" value="1280" />
+    <option name="height" value="1336" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -238,11 +237,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2332000" />
+    <option name="totallyTimeSpent" value="2461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="1336" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2319301" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
