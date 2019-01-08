@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Contact from '../components/contact'
 import styles from "./about.module.less"
 
 class AboutModal extends Component {
@@ -19,9 +19,11 @@ class AboutModal extends Component {
     const modal = (
       <div className={styles.modal}>
         <h2 className={styles.textPopUp}>About Me</h2>
-        <p>La croix cloud bread listicle, kale chips pok pok kogi gochujang four loko pork belly vaporware craft beer artisan man braid shoreditch. Biodiesel pickled sartorial, fam craft beer umami seitan. Coloring book ennui seitan venmo, cornhole kale chips lyft meditation artisan fanny pack disrupt snackwave. Pok pok vexillologist fanny pack, YOLO deep v offal pour-over hexagon yuccie microdosing taxidermy brunch everyday carry 3 wolf moon.</p>
-        <p>Gluten-free selvage put a bird on it twee raw denim. Banh mi everyday carry PBR&amp;B, four loko raclette bushwick activated charcoal coloring book YOLO cray shabby chic pug sustainable succulents austin. Narwhal gentrify ethical lo-fi pok pok fashion axe. Chicharrones tacos XOXO austin.</p>
-        <p>Kitsch fanny pack readymade, paleo gochujang bushwick sartorial marfa kale chips mumblecore. Marfa intelligentsia taxidermy, slow-carb freegan locavore chartreuse bicycle rights migas offal jean shorts. Tote bag schlitz shoreditch migas subway tile. Food truck blue bottle tilde four dollar toast, whatever prism distillery shaman farm-to-table woke kitsch biodiesel 3 wolf moon raclette. Street art locavore ethical skateboard. Swag twee vape lumbersexual, four loko tofu pickled tote bag bespoke.</p>
+        <p>I am fanatical about all aspects of web development. From UI to optimization for production, I love it all. Give me a problem and I will solve it.</p>
+
+          <p>If you would like to work together on a project, or just want to talk tech then please shoot me a message. I would love to hear from you!</p>
+        <br />
+        <Contact />
 
         <div className={styles.exit} onClick={this.handleClick}>
           &#x02297;

@@ -25,7 +25,7 @@ class Contact extends Component {
           Looking forward to hearing from you.
         </p>
 
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" netlify>
           <p>
             <label>Email: <input type="text" name="name" /></label>
           </p>

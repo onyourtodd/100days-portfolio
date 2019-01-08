@@ -3,7 +3,6 @@ import Contact from '../components/contact'
 import About from '../components/about'
 import Example from '../components/modal'
 import Cloud from '../components/cloud'
-
 import SplitText from 'react-pose-text'
 import Link from 'gatsby-link'
 import Clock from 'react-live-clock';
