@@ -1,9 +1,7 @@
 import React from 'react'
-
 import styles from "./logo.module.less"
 
 const Logo = ({ children }) => (
-
   <div className={styles.logoGrid}>
     <svg viewBox="0 0 132 132" className={`${styles.bounce} ${styles.logo}`}>
       <rect className={styles.cls1} width="132" height="132" rx="10" ry="10" />

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import tentacle from '../images/tentacle.svg'
 import styles from "./island.module.less"
 
 const Island = ({ children }) => (

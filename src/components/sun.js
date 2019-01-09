@@ -7,8 +7,6 @@ const SunComponent = styled.div`
   background-color: ${props => props.theme.skyColor}
 `;
 
-
-
 const Sun = ({ children }) => (
   
     <div className={styles.sunGrid}>
