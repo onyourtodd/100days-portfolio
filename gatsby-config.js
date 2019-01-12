@@ -9,8 +9,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Todd Fraser - An experimental portfolio',
+        short_name: 'Todd Fraser',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
@@ -24,16 +24,6 @@ module.exports = {
         google: {
           families: ['Open Sans', 'sans-serif']
         },
-      },
-    },
-    {
-      resolve: 'gatsby-source-graphql',
-      options: {
-        typeName: 'SWAPI',
-        // This is the field under which it's accessible
-        fieldName: 'swapi',
-        // URL to query from
-        url: 'https://api.graphcms.com/simple/v1/swapi'
       },
     },
   ],

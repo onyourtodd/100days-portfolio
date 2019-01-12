@@ -2,11 +2,10 @@ import React from 'react'
 import Contact from '../components/contact'
 import About from '../components/about'
 import Cloud from '../components/cloud'
+import styles from './mainBody.module.less'
 import SplitText from 'react-pose-text'
 import Link from 'gatsby-link'
 import Clock from 'react-live-clock';
-
-import styles from './mainBody.module.less'
 
 const MainLinks = [
   {
@@ -38,7 +37,7 @@ const MainBody = ({ children }) => {
         <SplitText initialPose="exit" pose="enter" charPoses={textEffect} className={styles.splittext}>
           front-end developer
         </SplitText>{' '}
-        from London, living in 🌞 Barcelona. It's <Clock format={'HH:mm a'} ticking={true} timezone={'Europe/Madrid'} /> here!
+        from London, living in 🌞 Barcelona. It's <Clock format={'h.mm a'} ticking={true} timezone={'Europe/Madrid'} /> here!
       </h2>
       <p>
         I have over 10 years of industry experience in the digital space, across a variety of different departments, projects and disciplines. Right now, I am currently focused on creating web apps using the latest front end technologies.
@@ -51,9 +50,9 @@ const MainBody = ({ children }) => {
         <Contact />
         <About />
         {MainLinks.map((link, index) => (
-          <li key={'main-body-link' + index}>
-            <Link to={link.link}>{link.name}<span className={styles.linkarrow}>&nbsp;→</span></Link>
-          </li>
+            <li key={'main-body-link' + index}>
+              <Link to={link.link}>{link.name}<span className={styles.linkarrow}>&nbsp;→</span></Link>
+            </li>
         ))}
       </ul>
     </section>

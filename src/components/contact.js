@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
-
+import React, { PureComponent } from 'react';
 import styles from "./contact.module.less"
 
-class Contact extends Component {
+class Contact extends PureComponent {
   constructor(props) {
     super(props);
     this.state = { showModal: false };

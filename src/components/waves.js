@@ -8,6 +8,16 @@ const Waves = ({ children }) => (
     <div className={styles.wavesGrid}>
         <div id={styles.wave}>
             <Fishes />
+            <div className={styles.bubbles}>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
 )

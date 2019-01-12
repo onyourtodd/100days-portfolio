@@ -1,8 +1,6 @@
 import React from 'react';
 import posed, { PoseGroup } from 'react-pose';
 
-import styles from './modal.less'
-
 const Modal = posed.div({
   enter: {
     y: 0,
