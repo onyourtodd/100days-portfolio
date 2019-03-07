@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Contact from '../components/contact'
 import styles from "./about.module.less"
 
 class AboutModal extends Component {
@@ -23,7 +22,6 @@ class AboutModal extends Component {
 
           <p>If you would like to work together on a project, or just want to talk tech then please shoot me a message. I would love to hear from you!</p>
         <br />
-        <Contact />
 
         <div className={styles.exit} onClick={this.handleClick}>
           &#x02297;

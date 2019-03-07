@@ -14,6 +14,6 @@ const IndexPage = () => (
     <Island />
     <Waves />
   </Layout>
-)
+);
 
 export default IndexPage

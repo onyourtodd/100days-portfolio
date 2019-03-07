@@ -1,10 +1,9 @@
 import React from 'react'
-import Contact from '../components/contact'
 import About from '../components/about'
 import Cloud from '../components/cloud'
 import styles from './mainBody.module.less'
 import SplitText from 'react-pose-text'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import Clock from 'react-live-clock';
 
 const MainLinks = [
@@ -13,10 +12,10 @@ const MainLinks = [
     link: 'www.email-mentor.com',
   },
   {
-    name: 'Quote generator',
-    link: '/quotes',
+    name: 'Contact',
+    link: '/contact',
   },
-]
+];
 
 const textEffect = {
   exit: { opacity: 0, y: 20 },
@@ -47,7 +46,6 @@ const MainBody = ({ children }) => {
           , <i>React</i>, <i>Redux</i>.
       </p>
       <ul>
-        <Contact />
         <About />
         {MainLinks.map((link, index) => (
             <li key={'main-body-link' + index}>
