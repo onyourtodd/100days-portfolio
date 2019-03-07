@@ -5,15 +5,18 @@ import MainBody from '../components/mainbody'
 import Waves from '../components/waves'
 import Layout from '../components/layout'
 import Island from '../components/island'
+import PageTransition from 'gatsby-plugin-page-transitions';
 
 const IndexPage = () => (
-  <Layout>
-    <Sun />
-    <Logo />
-    <MainBody />
-    <Island />
-    <Waves />
-  </Layout>
+    <PageTransition transitionTime={800}>
+        <Layout>
+            <Sun />
+            <Logo />
+            <MainBody />
+            <Island />
+            <Waves />
+        </Layout>
+    </PageTransition>
 );
 
 export default IndexPage

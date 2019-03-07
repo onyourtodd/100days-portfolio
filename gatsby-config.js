@@ -6,6 +6,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-less',
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-page-transitions',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -27,4 +28,4 @@ module.exports = {
       },
     },
   ],
-}
+};
