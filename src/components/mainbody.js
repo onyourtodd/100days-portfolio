@@ -8,10 +8,6 @@ import Clock from 'react-live-clock';
 
 const MainLinks = [
   {
-    name: 'Latest Work',
-    link: 'www.email-mentor.com',
-  },
-  {
     name: 'More info',
     link: '/about',
   },
@@ -28,7 +24,7 @@ const textEffect = {
     y: 0,
     delay: ({ charIndex }) => charIndex * 130,
   },
-}
+};
 
 const MainBody = ({ children }) => {
   return (<div className={styles.mainGrid}>
@@ -50,14 +46,20 @@ const MainBody = ({ children }) => {
           , <i>React</i>, <i>Redux</i>.
       </p>
       <ul>
+        <li>
+          <a href={"http://www.email-mentor.com"} target={"_blank"}>Latest work<span className={styles.linkarrow}>&nbsp;→</span></a>
+        </li>
+      </ul>
+      <ul>
         {MainLinks.map((link, index) => (
             <li key={'main-body-link' + index}>
               <Link to={link.link}>{link.name}<span className={styles.linkarrow}>&nbsp;→</span></Link>
             </li>
         ))}
       </ul>
+
     </section>
   </div>);
-}
+};
 
 export default MainBody
