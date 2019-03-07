@@ -1,5 +1,5 @@
+import React, { Component } from 'react';
 import styles from './contact.module.less'
-import React from 'react'
 import { Link } from 'gatsby'
 
 const Contact = ({ children }) => (

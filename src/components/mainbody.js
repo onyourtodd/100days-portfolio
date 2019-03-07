@@ -12,6 +12,10 @@ const MainLinks = [
     link: 'www.email-mentor.com',
   },
   {
+    name: 'More info',
+    link: '/about',
+  },
+  {
     name: 'Contact',
     link: '/contact',
   },
@@ -46,7 +50,6 @@ const MainBody = ({ children }) => {
           , <i>React</i>, <i>Redux</i>.
       </p>
       <ul>
-        <About />
         {MainLinks.map((link, index) => (
             <li key={'main-body-link' + index}>
               <Link to={link.link}>{link.name}<span className={styles.linkarrow}>&nbsp;→</span></Link>
