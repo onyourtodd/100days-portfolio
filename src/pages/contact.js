@@ -1,14 +1,11 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Contact from "../components/contact";
-import PageTransition from 'gatsby-plugin-page-transitions';
 
 const ContactPage = () => (
-    <PageTransition transitionTime={800}>
-        <Layout>
-            <Contact />
-        </Layout>
-    </PageTransition>
+    <Layout>
+        <Contact />
+    </Layout>
 );
 
 export default ContactPage
