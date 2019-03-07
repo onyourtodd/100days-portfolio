@@ -67,5 +67,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "resolutions": {
+    "graphql": "^2.0.5"
   }
 }
