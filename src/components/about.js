@@ -12,6 +12,8 @@ const About = ({ children }) => (
         <p>* This site is currently a living experimental portfolio and is being constantly updated to test new tech.</p>
         <br />
 
+        <div className={styles.tentacle}></div>
+
         <div className={styles.exit}>
             <Link to="/">&#x02297;</Link>
         </div>
